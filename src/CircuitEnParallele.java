@@ -1,4 +1,4 @@
-public class CircuitEnParallele extends Circuit{
+public class CircuitEnParallele extends Circuit {
 
     private int x = 0;
     private int y;
