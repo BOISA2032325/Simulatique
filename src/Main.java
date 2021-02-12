@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class Main {
 
+    //Je n'ai pas reussie a mettre dans le package parce que mon to string est publique et
+    //je sait pas comment le changer.
+
 
     public static void main(String [] args){
 
