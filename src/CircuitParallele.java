@@ -1,4 +1,6 @@
-public class CircuitEnParallele extends Circuit {
+// REB : Doit s'appeler CircuitParallele
+
+public class CircuitParallele extends Circuit {
 
     private int x = 0;
     private int y;

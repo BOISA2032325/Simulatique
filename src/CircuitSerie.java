@@ -1,4 +1,5 @@
-public class CircuitEnSerie extends Circuit {
+// REB : Doit s'appeler CircuitSerie
+public class CircuitSerie extends Circuit {
 
     private int x = 0;
     private int y;

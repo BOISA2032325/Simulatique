@@ -11,7 +11,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Resistor resistor;
         Circuit circuit = new Circuit();
-        CircuitEnParallele circuitEnParallele = new CircuitEnParallele();
+        CircuitParallele circuitEnParallele = new CircuitParallele();
 
 
         //Question
@@ -30,7 +30,7 @@ public class Main {
         String[] choixCouleurs = choixCouleur.split(",");
 
         for (int i=0; i < choixCouleurs.length; i++){
-            resistor = FabriqueResistor.fabriqueResistor(choixCouleurs[i]);
+            resistor = FabriqueResistor.fabriquerResistor(choixCouleurs[i]);
             circuit.ajouterResistor(resistor);
         }
 

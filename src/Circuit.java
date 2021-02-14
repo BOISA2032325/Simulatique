@@ -14,7 +14,8 @@ public class Circuit {
 
     }
 
-    public double getTension() {
+    // REB : Doit s'appeler calculerTension
+    public double calculerTension() {
         return tension;
     }
 }

@@ -9,7 +9,8 @@ public class Resistor {
         this.tolerence = tolerence;
     }
 
-    public double getTolerence() {
+    // REB : Doit s'appeler getTolerance
+    public double getTolerance() {
         return tolerence;
     }
 
