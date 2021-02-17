@@ -1,4 +1,4 @@
-public class CircuitSerie extends Circuit {
+public class CircuitSerie extends AbstarctCircuit {
 
     private int x = 0;
     private int y;

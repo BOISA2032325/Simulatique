@@ -11,7 +11,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Resistor resistor;
         CircuitParallele circuitEnParallele = new CircuitParallele();
-        Circuit circuit = new Circuit();
+        AbstarctCircuit circuit = null;
 
 
         System.out.println("Maintenant veuillez choisir le type de ciruit");
@@ -51,7 +51,7 @@ public class Main {
             System.out.println("Bonjour utilisateur");
             System.out.println("Veuillez écrire la tension");
 
-            circuit.tension = sc.nextDouble();
+            circuit.mettreSousTension(sc.nextDouble());
 
             System.out.println("Veuillez entrer vos chaine de caractère afin de crée votre résistor");
             System.out.println("Veuillez séparer chaque résistor par une virgule");

@@ -1,4 +1,4 @@
-public class CircuitParallele extends Circuit {
+public class CircuitParallele extends AbstarctCircuit {
 
 
     private double valeurFinal;

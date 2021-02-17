@@ -1,4 +1,4 @@
-public class Circuit {
+public abstract class AbstarctCircuit {
 
     protected Resistor[] tableauResistor = new Resistor[20];
     protected int emplacementDuTableau = 0;
@@ -12,9 +12,8 @@ public class Circuit {
         return courant;
     }
 
-    public double calculerResistance(){
-        return 0;
-    }
+    public abstract double calculerResistance();
+
 
 
     void ajouterResistor(Resistor resistor1){
@@ -25,11 +24,6 @@ public class Circuit {
         this.tension = tension;
 
     }
-
-
-    //double CalculerCourrant(){
-
-    //}
 
     public double calculerTension() {
         return tension;
