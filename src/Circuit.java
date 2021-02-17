@@ -1,4 +1,4 @@
-public abstract class AbstarctCircuit {
+public class Circuit {
 
     protected Resistor[] tableauResistor = new Resistor[20];
     protected int emplacementDuTableau = 0;
@@ -14,7 +14,6 @@ public abstract class AbstarctCircuit {
 
     }
 
-    abstract double calculerResistance();
 
     //double CalculerCourrant(){
 

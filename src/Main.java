@@ -10,8 +10,8 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
         Resistor resistor;
-        AbstarctCircuit circuit = new AbstarctCircuit();
         CircuitParallele circuitEnParallele = new CircuitParallele();
+        Circuit circuit = new Circuit();
 
 
         System.out.println("Maintenant veuillez choisir le type de ciruit");
@@ -42,9 +42,8 @@ public class Main {
                 circuit.ajouterResistor(resistor);
             }
 
-            parallele.calculerResistance();
-            parallele.calculerCourrant();
-            System.out.println(parallele.toString());
+            System.out.println(parallele.calculerResistance());
+            System.out.println(parallele.calculerCourrant());
 
         }else if (premiereLettreDuChoix == 'S'){
             CircuitSerie serie = new CircuitSerie();
