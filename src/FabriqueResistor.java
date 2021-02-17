@@ -20,7 +20,7 @@ public class FabriqueResistor {
         o(0),
         A(0);
 
-        private int valeur;
+        private final int valeur;
 
 
         couleur(int valeur) {

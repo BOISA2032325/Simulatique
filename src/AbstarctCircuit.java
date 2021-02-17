@@ -1,4 +1,4 @@
-public class Circuit {
+public abstract class AbstarctCircuit {
 
     protected Resistor[] tableauResistor = new Resistor[20];
     protected int emplacementDuTableau = 0;
@@ -14,7 +14,13 @@ public class Circuit {
 
     }
 
-    public double getTension() {
+    abstract double calculerResistance();
+
+    //double CalculerCourrant(){
+
+    //}
+
+    public double calculerTension() {
         return tension;
     }
 }

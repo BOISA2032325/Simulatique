@@ -1,21 +1,18 @@
-public class CircuitEnParallele extends Circuit {
+public class CircuitParallele extends AbstarctCircuit {
 
     private int x = 0;
     private int y;
-    private double valeurDeLaResistance;
+    private double valeurDeLaResistance = 0;
     private double valeurFinal;
     private double courant;
 
     public double calculerResistance(){
 
-        do {
-            y = x++;
-            valeurDeLaResistance = (1/tableauResistor[emplacementDuTableau].getResistance());
-            valeurFinal = valeurDeLaResistance + valeurFinal;
+       for (int i = 0; i<emplacementDuTableau; i ++){
+           valeurDeLaResistance += (1/tableauResistor[i].getResistance());
+       }
 
-        }while (y < emplacementDuTableau);
-
-        return valeurFinal;
+        return 1/valeurDeLaResistance;
     }
 
     public double calculerCourrant(){
