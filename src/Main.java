@@ -22,7 +22,7 @@ public class Main {
         char premiereLettreDuChoix = choixDuCircuit.toUpperCase().charAt(0);
 
         if (premiereLettreDuChoix == 'P'){
-            CircuitParallele parallele = new CircuitParallele();
+            circuit = new CircuitParallele();
 
             System.out.println("Bonjour utilisateur");
             System.out.println("Veuillez écrire la tension");
@@ -42,11 +42,10 @@ public class Main {
                 circuit.ajouterResistor(resistor);
             }
 
-            System.out.println(parallele.calculerResistance());
-            System.out.println(parallele.calculerCourrant());
+            System.out.println(circuit.toString());
 
         }else if (premiereLettreDuChoix == 'S'){
-            CircuitSerie serie = new CircuitSerie();
+            circuit = new CircuitSerie();
 
 
             System.out.println("Bonjour utilisateur");
@@ -67,10 +66,7 @@ public class Main {
                 circuit.ajouterResistor(resistor);
             }
 
-            serie.calculerResistance();
-            serie.calculerCourrant();
-
-            System.out.println(serie.toString());
+            System.out.println(circuit.toString());
 
         }
 

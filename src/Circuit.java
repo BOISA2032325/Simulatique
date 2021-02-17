@@ -5,6 +5,18 @@ public class Circuit {
     protected double tension;
 
 
+    public double calculerCourrant(){
+
+       double courant = tension/calculerResistance();
+
+        return courant;
+    }
+
+    public double calculerResistance(){
+        return 0;
+    }
+
+
     void ajouterResistor(Resistor resistor1){
         tableauResistor[emplacementDuTableau ++] = resistor1;
     }

@@ -3,7 +3,7 @@ public class CircuitSerie extends Circuit {
     private int x = 0;
     private int y;
     private double valeurFinal = 0;
-    private double valeurDeLaResistance = 0;
+    private double valeurDeLaResistance;
     private double courant;
 
 
@@ -13,14 +13,6 @@ public class CircuitSerie extends Circuit {
         }
 
        return valeurDeLaResistance;
-    }
-
-    public double calculerCourrant(){
-
-        courant = tension/calculerResistance();
-
-        return courant;
-
     }
 
     @Override
