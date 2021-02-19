@@ -3,13 +3,14 @@ public class Resistor {
     double resistance;
     double tolerence;
 
+    // REB :  Faute dans tolérance
 
 
     public void setTolerence(double tolerence) {
         this.tolerence = tolerence;
     }
 
-    public double getTolerence() {
+    public double getTolerance() {
         return tolerence;
     }
 

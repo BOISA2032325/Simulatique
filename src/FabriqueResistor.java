@@ -50,7 +50,8 @@ public class FabriqueResistor {
         }
     }
 
-    public static Resistor fabriqueResistor(String couleurs){
+    //REB : REnommer
+    public static Resistor fabriquerResistor(String couleurs){
 
         Resistor resistor = new Resistor();
         Pattern couleurChoisie = Pattern.compile("([NBROJVbML]){2,3}[NBROJVbMLoA][BROJVbMoA]$");
