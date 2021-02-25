@@ -1,11 +1,12 @@
 public class CircuitParallele extends AbstarctCircuit {
 
 
+    // REB : Retirez ces attributs
     private double valeurFinal;
     private double courant;
 
     public double calculerResistance(){
-
+        // REB : indentation
         double valeurDeLaResistance = 0;
 
        for (int i = 0; i<emplacementDuTableau; i ++){

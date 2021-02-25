@@ -18,6 +18,7 @@ public class Main {
         System.out.println("Les choix sont en parallèle ou en série");
 
 
+        // REB : Il ne devrait plus y avoir de duplication.
         String choixDuCircuit = sc.next();
         char premiereLettreDuChoix = choixDuCircuit.toUpperCase().charAt(0);
 

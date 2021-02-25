@@ -54,7 +54,8 @@ public class FabriqueResistor {
     public static Resistor fabriquerResistor(String couleurs){
 
         Resistor resistor = new Resistor();
-        Pattern couleurChoisie = Pattern.compile("([NBROJVbML]){2,3}[NBROJVbMLoA][BROJVbMoA]$");
+        // REB : Il manque G.
+        Pattern couleurChoisie = Pattern.compile("([NBROGJVbML]){2,3}[NBROJGVbMLoA][BROGJVbMoA]$");
         String strChar1,strChar2,strChar3,strChar4,strChar5 = "xxxxx";
         double multiplicateur;
         couleur choix1,choix2,choix3,choix4,choix5;

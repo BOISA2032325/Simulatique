@@ -1,5 +1,6 @@
 public class CircuitSerie extends AbstarctCircuit {
 
+    // REB : retirez ces attributs
     private int x = 0;
     private int y;
     private double valeurFinal = 0;
@@ -8,6 +9,7 @@ public class CircuitSerie extends AbstarctCircuit {
 
 
     public double calculerResistance() {
+        // initialiser valeuDeLaResistance à 0
         for (int i = 0; i< emplacementDuTableau; i ++){
             valeurDeLaResistance += (tableauResistor[i].getResistance());
         }
