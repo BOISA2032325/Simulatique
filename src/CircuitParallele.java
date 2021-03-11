@@ -1,8 +1,24 @@
-public class CircuitParallele extends AbstarctCircuit {
+public class CircuitParallele extends AbstarctCircuit{
 
 
     private double valeurFinal;
     private double courant;
+
+
+    @Override
+    public void mettreSousTension(double tension) {
+
+    }
+
+    @Override
+    public void specifierCourant(double courant) {
+
+    }
+
+    @Override
+    public double calculerCourant() {
+        return 0;
+    }
 
     public double calculerResistance(){
 

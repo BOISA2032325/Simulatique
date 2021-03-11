@@ -1,4 +1,4 @@
-public abstract class AbstarctCircuit {
+public abstract class AbstarctCircuit implements IComposant {
 
     protected Resistor[] tableauResistor = new Resistor[20];
     protected int emplacementDuTableau = 0;
@@ -20,10 +20,6 @@ public abstract class AbstarctCircuit {
         tableauResistor[emplacementDuTableau ++] = resistor1;
     }
 
-    void mettreSousTension(double tension){
-        this.tension = tension;
-
-    }
 
     public double calculerTension() {
         return tension;

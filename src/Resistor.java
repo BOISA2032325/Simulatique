@@ -1,4 +1,4 @@
-public class Resistor {
+public  class Resistor implements IComposant {
 
     double resistance;
     double tolerence;
@@ -22,4 +22,28 @@ public class Resistor {
     }
 
 
+    @Override
+    public void mettreSousTension(double tension) {
+
+    }
+
+    @Override
+    public double calculerTension() {
+        return 0;
+    }
+
+    @Override
+    public void specifierCourant(double courant) {
+
+    }
+
+    @Override
+    public double calculerCourant() {
+        return 0;
+    }
+
+    @Override
+    public double calculerResistance() {
+        return 0;
+    }
 }
