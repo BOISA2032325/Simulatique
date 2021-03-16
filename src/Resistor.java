@@ -22,6 +22,7 @@ public  class Resistor implements IComposant {
     }
 
 
+    // REB : à implémenter
     @Override
     public void mettreSousTension(double tension) {
 

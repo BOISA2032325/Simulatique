@@ -5,6 +5,8 @@ public class CircuitParallele extends AbstarctCircuit{
     private double courant;
 
 
+    // REB : à implémenter
+    // duplication
     @Override
     public void mettreSousTension(double tension) {
 
@@ -22,6 +24,7 @@ public class CircuitParallele extends AbstarctCircuit{
 
     public double calculerResistance(){
 
+        // REB : Indentation
         double valeurDeLaResistance = 0;
 
        for (int i = 0; i<emplacementDuTableau; i ++){
@@ -33,6 +36,7 @@ public class CircuitParallele extends AbstarctCircuit{
 
 
 
+    // REB : il faut afficher tous les résitors
     @Override
     public String toString() {
         return "CircuitEnParallele{" +
