@@ -1,7 +1,9 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public abstract class AbstarctCircuit implements IComposant {
 
-    protected Resistor[] tableauResistor = new Resistor[20];
-    protected int emplacementDuTableau = 0;
+    List<IComposant> composants = new ArrayList<>();
     protected double tension;
 
 
@@ -17,7 +19,7 @@ public abstract class AbstarctCircuit implements IComposant {
 
 
     void ajouterResistor(Resistor resistor1){
-        tableauResistor[emplacementDuTableau ++] = resistor1;
+        composants.add(resistor1);
     }
 
 

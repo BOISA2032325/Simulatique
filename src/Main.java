@@ -2,8 +2,6 @@ import java.util.Scanner;
 
 public class Main {
 
-    //Je n'ai pas reussie a mettre dans le package parce que mon to string est publique et
-    //je sait pas comment le changer.
 
 
     public static void main(String [] args){
@@ -14,11 +12,35 @@ public class Main {
         AbstarctCircuit circuit = null;
 
 
-        System.out.println("Maintenant veuillez choisir le type de ciruit");
-        System.out.println("Les choix sont en parallèle ou en série");
+        System.out.println("Bonjour utilisateur voici la facons d'écrire votre circuit");
+        System.out.println("Veuillez ecrire de la facon suivante : ");
+        System.out.println("Pour mettre une résistance en serie mettre les resistance voulu entre ()");
+        System.out.println("Pour mettre une resistance en parallèle mettre les resistance voulu entre []");
+        System.out.println("Tres important de pas oublier de mettre des espaces après chaque paranthèse");
+        System.out.println("et après chaque crochet ");
+        System.out.println("et aprèes chaque résistance ");
+        System.out.println("voici aussi comment écrire les résistance");
+        System.out.println("Vous devez choisir parmis les caratèere suivant et en écrire 4 ou 5");
+        System.out.println("Les caractere sont les suivant : NBROJVbMLoA");
+
+        String circuitVoulu = sc.next();
+        circuit = FabriqueCircuit.fabriqueCircuit(circuitVoulu);
+
+        System.out.println("veuillez écrire la tension souhaité");
+
+        double tension1;
+        circuit.tension = sc.nextDouble();
+
+        System.out.println(circuit.toString());
 
 
-        String choixDuCircuit = sc.next();
+
+
+
+
+
+
+       /* String choixDuCircuit = sc.next();
         char premiereLettreDuChoix = choixDuCircuit.toUpperCase().charAt(0);
 
         if (premiereLettreDuChoix == 'P'){
@@ -29,8 +51,7 @@ public class Main {
 
             circuit.tension = sc.nextDouble();
 
-            System.out.println("Veuillez entrer vos chaine de caractère afin de crée votre résistor");
-            System.out.println("Veuillez séparer chaque résistor par une virgule");
+
             System.out.println("Vous devez choisir parmis les caratèere suivant et en écrire 4 ou 5");
             System.out.println("Les caractere sont les suivant : NBROJVbMLoA");
             String choixCouleur = sc.next();
@@ -68,7 +89,7 @@ public class Main {
 
             System.out.println(circuit.toString());
 
-        }
+        }*/
 
 
     }
