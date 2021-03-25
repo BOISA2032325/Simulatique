@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Veuillez ecrire de la facon suivante : ");
         System.out.println("Pour mettre une résistance en serie mettre les resistance voulu entre ()");
         System.out.println("Pour mettre une resistance en parallèle mettre les resistance voulu entre []");
-        System.out.println("Tres important de pas oublier de mettre des espaces après chaque paranthèse");
+        System.out.println("Tres important de pas oublier de mettre des / après chaque paranthèse");
         System.out.println("et après chaque crochet ");
         System.out.println("et aprèes chaque résistance ");
         System.out.println("voici aussi comment écrire les résistance");

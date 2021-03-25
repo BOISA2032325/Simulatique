@@ -8,7 +8,7 @@ public class FabriqueCircuit {
     public static AbstarctCircuit fabriqueCircuit(String description) {
 
 
-        String[] fabric = description.split(" ");
+        String[] fabric = description.split("/");
         Stack<AbstarctCircuit> circuits = new Stack<>();
         Stack<Character> parens = new Stack<>();
         AbstarctCircuit circuit = null;

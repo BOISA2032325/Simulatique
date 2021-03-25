@@ -37,8 +37,7 @@ public class CircuitParallele extends AbstarctCircuit{
     public String toString() {
         return "CircuitEnParallele{" +
                 ", valeurDeLaResistance=" + calculerResistance() +
-                ", valeurFinal=" + valeurFinal +
-                ", courant=" + courant +
+                ", courant=" + calculerCourant() +
                 '}';
     }
 }

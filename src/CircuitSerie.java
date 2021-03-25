@@ -34,9 +34,8 @@ public class CircuitSerie extends AbstarctCircuit {
     @Override
     public String toString() {
         return "CircuitEnSerie{" +
-                ", valeurFinal=" + valeurFinal +
-                ", valeurDeLaResistance=" + valeurDeLaResistance +
-                ", courant=" + courant +
+                ", valeurFinal=" + calculerResistance() +
+                ", courant=" + calculerCourant() +
                 '}';
     }
 }
