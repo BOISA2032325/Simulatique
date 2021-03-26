@@ -9,4 +9,8 @@ public interface IComposant {
     double calculerCourant();
 
     double calculerResistance();
+
+    /* Pour faire le circuit en x
+    (/ONNo/ONNo/ONNo/[/BVBo/VNNo/JNNo/MBNo/]/)
+     */
 }
