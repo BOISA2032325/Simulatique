@@ -1,3 +1,5 @@
+import java.io.File;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -62,6 +64,16 @@ public class FabriqueResistor {
         int valeur1,valeur2,valeur3,valeur4,valeur5;
         Matcher matcher = couleurChoisie.matcher(couleurs);
 
+        try {
+            matcher.find();
+        }
+        catch (Exception e){
+
+            System.out.println("Une erreur c'est produit");
+
+        }
+
+
         if (matcher.find()){
 
 
@@ -121,6 +133,7 @@ public class FabriqueResistor {
             return resistor;
 
         }
+
 
         return null;
 
