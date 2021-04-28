@@ -58,8 +58,8 @@ public class Main {
 
             String[] choixCouleurs = choixCouleur.split(",");
 
-            for (int i=0; i < choixCouleurs.length; i++) {
-                resistor = FabriqueResistor.fabriqueResistor(choixCouleurs[i]);
+            for (String couleur : choixCouleurs) {
+                resistor = FabriqueResistor.fabriqueResistor(couleur);
                 circuit.ajouterResistor(resistor);
             }
 
@@ -82,8 +82,8 @@ public class Main {
 
             String[] choixCouleurs = choixCouleur.split(",");
 
-            for (int i=0; i < choixCouleurs.length; i++) {
-                resistor = FabriqueResistor.fabriqueResistor(choixCouleurs[i]);
+            for (String couleur : choixCouleurs) {
+                resistor = FabriqueResistor.fabriqueResistor(couleur);
                 circuit.ajouterResistor(resistor);
             }
 

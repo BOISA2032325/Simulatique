@@ -1,5 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public abstract class AbstarctCircuit implements IComposant {
 
@@ -25,5 +28,12 @@ public abstract class AbstarctCircuit implements IComposant {
 
     public double calculerTension() {
         return tension;
+    }
+
+    public String toString(){
+        String description = "";
+        Stream<IComposant> StringCompo = composants.stream();
+        description = StringCompo.map(Objects::toString).collect(Collectors.joining());
+        return calculerResistance() + calculerCourant() + calculerTension() + description;
     }
 }
