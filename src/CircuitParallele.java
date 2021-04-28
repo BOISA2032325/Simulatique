@@ -24,9 +24,9 @@ public class CircuitParallele extends AbstarctCircuit{
 
         double valeurDeLaResistance = 0;
 
-       for (int i = 0; i<composants.size(); i ++){
-           valeurDeLaResistance += (1/composants.get(i).calculerResistance());
-       }
+        for (IComposant composant : composants) {
+            valeurDeLaResistance += (1 / composant.calculerResistance());
+        }
 
         return 1/valeurDeLaResistance;
     }

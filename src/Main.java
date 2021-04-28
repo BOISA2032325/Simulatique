@@ -40,7 +40,7 @@ public class Main {
 
 
 
-       /* String choixDuCircuit = sc.next();
+        String choixDuCircuit = sc.next();
         char premiereLettreDuChoix = choixDuCircuit.toUpperCase().charAt(0);
 
         if (premiereLettreDuChoix == 'P'){
@@ -89,7 +89,7 @@ public class Main {
 
             System.out.println(circuit.toString());
 
-        }*/
+        }
 
 
     }

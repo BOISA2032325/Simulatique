@@ -24,8 +24,8 @@ public class CircuitSerie extends AbstarctCircuit {
     }
 
     public double calculerResistance() {
-        for (int i = 0; i< composants.size(); i ++){
-            valeurDeLaResistance += (composants.get(i).calculerResistance());
+        for (IComposant composant : composants) {
+            valeurDeLaResistance += (composant.calculerResistance());
         }
 
        return valeurDeLaResistance;
